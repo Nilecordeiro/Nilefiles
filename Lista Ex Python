@@ -1,0 +1,16 @@
+#Ex 1.a Retornando o maior número da lista numérica
+numeros = [int(input("Número: "))for i in range(10)]
+print("O maior elemento é:",max(numeros))
+
+#Ex 1.b Retornando a soma dos elementos
+soma_dos_numeros =sum(numeros)
+print("A soma dos elementos é:",soma_dos_numeros)
+
+#Ex 1.c Retornando o número de ocorrências do primeiro elemento
+numero_ocorrencia = sum([ocorrencia == numeros[0] for ocorrencia in numeros])
+print("O número de ocorrências do primeiro elemento da lista é:",numero_ocorrencia)
+
+#Ex 1.d Retornando a média
+qtd_numeros = len(numeros)
+media = soma_dos_numeros/qtd_numeros
+print("A média dos elementos é:",media)
